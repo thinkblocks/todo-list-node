@@ -1,0 +1,30 @@
+{
+	"name": "todo-list-node",
+	"version": "0.0.1",
+	"description": "This project provides with TODO Task management service.",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest",
+		"lint": "eslint src --fix"
+	},
+	"pre-commit": [
+		"lint",
+		"test"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/thinkblocks/todo-list-node.git"
+	},
+	"author": "Ankush Khurana (ankushkhurana34@gmail.com) GIT: (thinkblocks)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/thinkblocks/todo-list-node/issues"
+	},
+	"homepage": "https://github.com/thinkblocks/todo-list-node#readme",
+	"devDependencies": {
+		"eslint": "^8.1.0",
+		"eslint-config-google": "^0.14.0",
+		"jest": "^27.3.1",
+		"pre-commit": "^1.2.2"
+	}
+}
