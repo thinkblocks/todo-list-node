@@ -1,4 +1,4 @@
-# todo-list-node
+# Todo-list-node
 This project provides TODO task management service leveraging AWS cloud for deployment.
 
 ## Description
@@ -45,9 +45,9 @@ If no id has been provided, this functionlity will return all TODO's and else ma
 ## Project Initialization
 Following are the steps that are to be taken before we move towards using the service
 
-1.  execute the ``` npm install ``` command to install the dependencies.
-2.  make sure we have all the dependencies installed without error.
-3. follow with the `Usage` which takes you through the steps of using the service.
+1.  Execute the ``` npm install ``` command to install the dependencies.
+2.  Make sure we have all the dependencies installed without error.
+3.  Follow with the `Usage` which takes you through the steps of using the service.
 ## Usage
 1.  Have AWS Access configured on Local.
 2.  The user deploying over AWS should have access over following resources:
