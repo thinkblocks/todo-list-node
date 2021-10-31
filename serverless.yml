@@ -24,6 +24,7 @@ provider:
   name: aws
   runtime: nodejs14.x
   region: ${opt:region, 'us-east-1'}
+  stage: ${opt:stage, 'dev'}
 
 # you can overwrite defaults here
 #  stage: dev
