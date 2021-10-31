@@ -1,0 +1,9 @@
+PolicyName: DynamoDBTodosCreateAccessPolicy
+PolicyDocument:
+  Version: '2012-10-17'
+  Statement:
+    - Effect: Allow # note that these rights are given in the default policy and are required if you want logs out of your lambda(s)
+      Action:
+        - dynamodb:PutItem
+        - dynamodb:DescribeTable
+      Resource: arn:aws:dynamodb:*:*:table/todos

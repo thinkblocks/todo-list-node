@@ -1,0 +1,5 @@
+name: 'todo-management-find-todo-resource'
+role: readTodosLambdaAccessRole
+handler:  src/index.findMatchingTodos
+memorySize: 3000
+timeout: 900

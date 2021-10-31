@@ -1,0 +1,5 @@
+name: 'todo-management-create-todo-resource'
+role: createTodoLambdaAccessRole
+handler:  src/index.createTodo
+memorySize: 3000
+timeout: 900
