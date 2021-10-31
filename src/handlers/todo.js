@@ -15,7 +15,6 @@ const createTODO = async (
       (err, data) => {
         result = data;
         if (err) {
-          console.log(err);
           code = API_RESPONSE_CONFIG.CODE.UNPROCESSABLE_INPUT;
           message = API_RESPONSE_CONFIG.MESSAGE.UNPROCESSABLE_INPUT;
         }
