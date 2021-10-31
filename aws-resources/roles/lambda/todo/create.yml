@@ -1,0 +1,14 @@
+Type: AWS::IAM::Role
+Properties:
+  RoleName: createTodoLambdaAccessRole
+  AssumeRolePolicyDocument:
+    Version: '2012-10-17'
+    Statement:
+      - Effect: Allow
+        Principal:
+            Service: lambda.amazonaws.com
+        Action: sts:AssumeRole
+  Policies:
+    - ${file(aws-resources/policies/cloudwatch/access.yml)}
+    - ${file(aws-resources/policies/dynamodb/todos/create-access.yml)}
+    - ${file(aws-resources/policies/dynamodb/todos/read-access.yml)}

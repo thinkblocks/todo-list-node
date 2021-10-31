@@ -1,0 +1,11 @@
+PolicyName: DynamoDBTodosReadAccessPolicy
+PolicyDocument:
+  Version: '2012-10-17'
+  Statement:
+    - Effect: Allow # note that these rights are given in the default policy and are required if you want logs out of your lambda(s)
+      Action:
+        - dynamodb:Get*
+        - dynamodb:Query
+        - dynamodb:Scan
+        - dynamodb:BatchGet*
+      Resource: arn:aws:dynamodb:*:*:table/todos

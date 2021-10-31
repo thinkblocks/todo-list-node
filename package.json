@@ -1,30 +1,38 @@
 {
-	"name": "todo-list-node",
-	"version": "0.0.1",
-	"description": "This project provides with TODO Task management service.",
-	"main": "index.js",
-	"scripts": {
-		"test": "jest",
-		"lint": "eslint src --fix"
-	},
-	"pre-commit": [
-		"lint",
-		"test"
-	],
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/thinkblocks/todo-list-node.git"
-	},
-	"author": "Ankush Khurana (ankushkhurana34@gmail.com) GIT: (thinkblocks)",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/thinkblocks/todo-list-node/issues"
-	},
-	"homepage": "https://github.com/thinkblocks/todo-list-node#readme",
-	"devDependencies": {
-		"eslint": "^8.1.0",
-		"eslint-config-google": "^0.14.0",
-		"jest": "^27.3.1",
-		"pre-commit": "^1.2.2"
-	}
+  "name": "todo-list-node",
+  "version": "0.0.1",
+  "description": "This project provides with TODO Task management service.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint src --fix"
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thinkblocks/todo-list-node.git"
+  },
+  "author": "Ankush Khurana (ankushkhurana34@gmail.com) GIT: (thinkblocks)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thinkblocks/todo-list-node/issues"
+  },
+  "homepage": "https://github.com/thinkblocks/todo-list-node#readme",
+  "devDependencies": {
+    "eslint": "^8.1.0",
+    "eslint-config-google": "^0.14.0",
+    "jest": "^27.3.1",
+    "pre-commit": "^1.2.2",
+    "serverless": "^2.64.1",
+    "serverless-dotenv-plugin": "^3.10.0",
+    "serverless-offline": "^8.2.0",
+    "serverless-prune-plugin": "^1.6.1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1017.0",
+    "uuid": "^8.3.2"
+  }
 }

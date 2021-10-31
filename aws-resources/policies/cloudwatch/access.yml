@@ -1,0 +1,10 @@
+PolicyName: CloudWatchAccessPolicy
+PolicyDocument:
+    Version: '2012-10-17'
+    Statement:
+      - Effect: Allow # note that these rights are given in the default policy and are required if you want logs out of your lambda(s)
+        Action:
+          - logs:CreateLogGroup
+          - logs:CreateLogStream
+          - logs:PutLogEvents
+        Resource: "*"
